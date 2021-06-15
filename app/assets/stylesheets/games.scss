@@ -1,0 +1,37 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.ask-form {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+
+  input[type=text]{
+    width: 320px;
+    height: 2.4em;
+    background-color: lightblue;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    outline: none;
+    box-shadow: 0 1px 2px grey;
+    padding: 0 5px 0 10px;
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+  input[type=submit] {
+    width:auto;
+
+    background-color: #404040;
+    color: white;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    box-shadow: 0 1px 2px grey;
+
+    &:hover {
+        background-color: #353535;
+       color: lightblue;
+    }
+
+  }
+}

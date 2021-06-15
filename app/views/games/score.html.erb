@@ -1,0 +1,12 @@
+<div class="banner">
+  <h1>Score</h1>
+</div>
+<div>
+  <p>Word:"<%=params[:word]%>"</p>
+  <p>Time take in seconds: <%=@time_diff%></p>
+  <p>Letters: <%= @letters.split("").join(', ') %> </p>
+  <p><%=@msg%></p>
+  <p><%= @json %> </p>
+</div>
+
+<%= link_to "Play Again", new_path %>

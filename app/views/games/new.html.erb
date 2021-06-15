@@ -1,0 +1,16 @@
+<div class="banner">
+  <h1>Play Game</h1>
+</div>
+<div style="display:flex; width: 500px; justify-content: space-between;">
+  <% @letters.split("").shuffle.each do |letter|   %>
+  <span style="box-shadow: 1px 1px 2px grey;text-align: center; background-color: red; color:white; font-size: 24px; width:30px; padding: 5px;"><%= letter %></span>
+  <% end  %>
+</div>
+<div class="my-form" style="margin: 2em 1em;">
+  <form class="ask-form" action="/score" >
+    <input type="text" name="start_time" value="<%=@start_time%>" hidden >
+    <input type="text" name="letters" value="<%=@letters%>" hidden >
+    <input class="ask-input" type="text" name="word" placeholder="Enter your longest word.">
+    <input class="ask-btn" type="submit" value="Enter">
+  </form>
+</div>
